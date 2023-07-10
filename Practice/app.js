@@ -10,7 +10,12 @@ app.set('view engine', 'ejs');
 app.listen(3000);
 
 app.get('/', (req, res) => {
-  res.render('index', { title: 'Home' });
+  const blogs = [
+    { title: 'Title 1', snippet: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quibusdam!' },
+    { title: 'Title 2', snippet: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quibusdam!' },
+    { title: 'Title 3', snippet: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quibusdam!' },
+  ];
+  res.render('index', { title: 'Home', blogs });
 });
 
 app.get('/about', (req, res) => {
