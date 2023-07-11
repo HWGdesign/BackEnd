@@ -53,20 +53,29 @@ padding: 1rem;
 list-style: none;
 }
 
-.content {
-padding: 0 2rem;
+.content{
+   width: 80%;
 }
 
-.content h1,
-.content h2,
-.content h3 {
-padding-bottom: 0.5rem;
+.content h1 {
+   color: rgb(161, 23, 207);
+}
+
+.content h2 {
+   padding: 0.35rem 0;
 }
 
 .content p {
 color: rgb(192, 189, 189);
 font-weight: 600;
 }
+
+.content .blog-content{
+   display: grid;
+   grid-template-rows: 2;
+   padding-top: 1rem;
+}
+
 
 .wrapper {
    display: flex;
