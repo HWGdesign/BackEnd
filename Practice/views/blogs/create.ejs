@@ -2,6 +2,25 @@
 <html lang="en">
   <%- include('../partials/head.ejs') %>
   <body>
-    <%- include('../partials/nav.ejs') %> <%- include('../partials/footer.ejs') %>
+    <%- include('../partials/nav.ejs') %>
+    <div class="wrapper">
+      <form action="/blogs" method="POST">
+        <div class="option">
+          <label>Title</label>
+          <input class="inputTitle" type="text" name="title" />
+        </div>
+        <div class="option">
+          <label>Snippet</label>
+          <input class="inputSnippet" type="text" name="snippet" />
+        </div>
+        <div class="option">
+          <label>Content</label>
+          <input class="inputContent" type="text" name="content" />
+        </div>
+
+        <button>Send</button>
+      </form>
+    </div>
+    <%- include('../partials/footer.ejs') %>
   </body>
 </html>
